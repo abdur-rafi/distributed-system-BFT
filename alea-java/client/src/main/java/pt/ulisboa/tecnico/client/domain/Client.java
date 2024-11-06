@@ -71,6 +71,7 @@ public class Client {
     private AtomicLong submitted = new AtomicLong(0L);
     private List<InetAddress> replicasAddresses;
     private int load;
+    private int confirmed = 0;
 
     public Client(List<InetAddress> addresses, int clientId, int oksRequested, int load) {
         Utils.init();
